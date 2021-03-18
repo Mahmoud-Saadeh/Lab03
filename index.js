@@ -16,5 +16,21 @@ document.getElementById("button").addEventListener("click", function () {
   var userFontNum = parseInt(userFontSize);
   document.getElementById("first-title").style.fontSize = userFontSize + "px";
 });
-// document.getElementById("p2").style.fontFamily = "Arial";
-// document.getElementById("p2").style.fontSize = "larger";
+
+var favouriteLanguage = prompt(
+  "Beteen Python and javascript What do you prefer:"
+);
+
+if (favouriteLanguage === "Python") {
+  document.write(
+    "<img src='https://cdn.pixabay.com/photo/2015/12/09/15/51/code-1084923__340.png' alt=" +
+      favouriteLanguage +
+      "/>"
+  );
+} else {
+  document.write(
+    "<img src='https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400__340.png' alt=" +
+      favouriteLanguage +
+      "/>"
+  );
+}
