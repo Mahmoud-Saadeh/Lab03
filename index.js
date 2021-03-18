@@ -1,6 +1,6 @@
 var userName = prompt("Please write your name here:");
 document.write(
-  "<h2>Hallo " + userName + " i hope you will enjoy reading this article</h2>"
+  "<h2>Hello " + userName + " i hope you will enjoy reading this article</h2>"
 );
 document.getElementById("body").style.backgroundColor = "white";
 
