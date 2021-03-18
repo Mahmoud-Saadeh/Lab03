@@ -18,7 +18,7 @@ document.getElementById("button").addEventListener("click", function () {
 });
 
 var favouriteLanguage = prompt(
-  "Beteen Python and javascript What do you prefer:"
+  "Beteen Python and Javascript What do you prefer:"
 );
 
 if (favouriteLanguage === "Python") {
@@ -27,10 +27,12 @@ if (favouriteLanguage === "Python") {
       favouriteLanguage +
       "/>"
   );
-} else {
+} else if (favouriteLanguage === "Javascript") {
   document.write(
     "<img src='https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400__340.png' alt=" +
       favouriteLanguage +
       "/>"
   );
+} else {
+  document.write("<h3>Wrong answer refresh the page to try agian</h3>");
 }
