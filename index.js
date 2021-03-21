@@ -13,26 +13,39 @@ document.getElementById("button").addEventListener("click", function () {
   );
   console.log(userFontSize);
   console.log(typeof parseInt(userFontSize));
-  var userFontNum = parseInt(userFontSize);
   document.getElementById("first-title").style.fontSize = userFontSize + "px";
 });
 
 var favouriteLanguage = prompt(
-  "Beteen Python and Javascript What do you prefer:"
+  "Between Python and Javascript What do you prefer:"
 );
-
-if (favouriteLanguage === "Python") {
-  document.write(
-    "<img src='https://cdn.pixabay.com/photo/2015/12/09/15/51/code-1084923__340.png' alt=" +
-      favouriteLanguage +
-      "/>"
-  );
-} else if (favouriteLanguage === "Javascript") {
-  document.write(
-    "<img src='https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400__340.png' alt=" +
-      favouriteLanguage +
-      "/>"
-  );
-} else {
-  document.write("<h3>Wrong answer refresh the page to try agian</h3>");
+while (favouriteLanguage !== "Python" && favouriteLanguage !== "Javascript") {
+  var favouriteLanguage = prompt("Please choose Python or Javascript");
 }
+var languageImage = "";
+if (favouriteLanguage === "Python") {
+  languageImage =
+    "<img src='https://cdn.pixabay.com/photo/2015/12/09/15/51/code-1084923__340.png' alt=" +
+    favouriteLanguage +
+    "/><br/>";
+} else if (favouriteLanguage === "Javascript") {
+  languageImage =
+    "<img src='https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400__340.png' alt=" +
+    favouriteLanguage +
+    "/><br/>";
+}
+
+document.write(languageImage);
+
+// https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796__340.jpg
+
+var count = prompt("How many buildings do you want:");
+var imageCount = "";
+for (var i = 0; i < count; i++) {
+  imageCount +=
+    "<img src='https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796__340.jpg' alt=building/><br/>" +
+    (i + 1) +
+    "<br/>";
+}
+
+document.write(imageCount);
