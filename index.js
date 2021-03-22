@@ -36,9 +36,16 @@ function counterHandler() {
 document.write(counterHandler());
 
 function greetingHandler(userName) {
-  document.write(
-    "<h2>Hello " + userName + " i hope you will enjoy reading this article</h2>"
+  // document.write(
+  //   "<h2>Hello " + userName + " i hope you will enjoy reading this article</h2>"
+  // );
+  var para = document.createElement("h2");
+  var node = document.createTextNode(
+    "Hello " + userName + " i hope you will enjoy reading this article"
   );
+  para.appendChild(node);
+  var element = document.getElementById("greeting-h2");
+  element.appendChild(para);
 }
 
 function backgroundColorHandler(userColor) {
