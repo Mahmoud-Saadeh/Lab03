@@ -128,3 +128,11 @@ footer p {
   margin-top: 20px;
   text-align: center;
 }
+
+.imageCount {
+  display: block;
+  width: 50%;
+  margin: 70px 0;
+  margin: auto;
+  border-radius: 50%;
+}
